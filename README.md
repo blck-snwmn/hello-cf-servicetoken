@@ -8,3 +8,16 @@ Please follow these steps:
   - Register a DNS record in the Cloudflare website settings.
   - Set the policy for the target application in the Cloudflare Zero Trust console.
 
+## Deploy
+deploy the Worker with the following command:
+```bash
+wrangler deploy
+```
+
+## Run
+Set the "Header and client ID" and "Header and client secret" you noted down earlier in the headers and access the registered domain.
+perl
+
+```bash
+curl https://<your-domain> -H 'CF-Access-Client-Id: <your-client-id>' -H 'CF-Access-Client-Secret: <your-client-secret>'
+```
